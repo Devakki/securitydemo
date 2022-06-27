@@ -25,6 +25,9 @@ class Customer
     #[ORM\Column(type: 'string', length: 255)]
     private $pannumber;
 
+    #[ORM\Column(type: 'datetime')]
+    private $created_at;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -74,6 +77,18 @@ class Customer
     public function setPannumber(string $pannumber): self
     {
         $this->pannumber = $pannumber;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->created_at;
+    }
+
+    public function setCreatedAt(\DateTimeInterface $created_at): self
+    {
+        $this->created_at = $created_at;
 
         return $this;
     }

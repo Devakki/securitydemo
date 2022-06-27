@@ -1,0 +1,273 @@
+body {
+    background: #f5f5f5;
+}
+
+.sidebar-panel li ul li ul {
+    margin: 0px;
+}
+
+.sidebar-panel li ul li ul li a {
+    margin: 0px;
+    padding: 9px 20px 9px 70px;
+}
+
+.sidebar-panel li.active a {
+    color: #f2f2f2;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.cls-sgDatatable > thead > tr > th{
+    padding: 8px !important;
+}
+
+.cls-sgDatatable > tbody > tr > td {
+    padding: 4px !important;
+}
+
+label.required:after {
+    content: "*";
+    color: #ff0000;
+}
+
+.start_actions .start_show_action {
+    display: inline-block;
+}
+
+.invalid-feedback {
+    color: #ff0000;
+}
+
+.invalid-feedback .text-uppercase {
+    text-transform: uppercase;
+}
+
+.invalid-feedback .form-error-message {
+    font-weight: normal;
+}
+
+.modal-content {
+    box-shadow: none;
+}
+
+input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
+    line-height: 25px;
+}
+
+.toggle.btn.btn-success.fnUpdateStatus {
+    border: 1px solid #26a65b;
+    height: 10px;
+    width: 70px;
+}
+
+.toggle.btn.off.fnUpdateStatus {
+    border: 1px solid #e4e4e4;
+    height: 10px;
+    width: 70px;
+}
+
+.fnUpdateStatus .btn.btn-success.toggle-on {
+    padding-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.fnUpdateStatus .btn.active.toggle-off {
+    padding: 9px 26px;
+    font-size: 10px;
+    font-weight: 600
+}
+
+.form-inline label {
+    margin-right: 0px !important;
+}
+
+.cls-sgDatatable tbody th, .cls-sgDatatable tbody td {
+    vertical-align: middle !important;
+}
+
+.cls-sgDatatable input[type='checkbox'] {
+    height: auto;
+}
+
+.cls-sgDatatable > thead > tr > th > input {
+    width: 100%;
+}
+
+.cls-sgDatatable > thead > tr > th > select {
+    width: 85%;
+}
+
+form[name="add_user"] fieldset.form-group {
+    margin-bottom: 0px;
+}
+
+.filter-table-responsive {
+    margin-top: 40px;
+}
+
+/*breadcrums*/
+.breadcrumbs {
+    margin-bottom: 20px;
+}
+
+ul.breadcrumb {
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    list-style-type: none;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb ul {
+    display: inline;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 0;
+}
+
+ul.breadcrumb li:before {
+    content: "\25BA \0020";
+    font-size: 8px;
+    font-weight: bolder;
+    position: absolute;
+    left: -20px;
+    color: #000000;
+}
+
+.container-padding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*user profile css*/
+
+.profile-img {
+    text-align: center;
+}
+
+.profile-img img {
+    width: 70%;
+    height: 100%;
+}
+
+.profile-img .file {
+    position: relative;
+    overflow: hidden;
+    margin-top: -20%;
+    width: 70%;
+    border: none;
+    border-radius: 0;
+    font-size: 15px;
+    background: #212529b8;
+}
+
+.profile-img .file input {
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+
+.profile-head h5 {
+    color: #333;
+}
+
+.modal {
+    z-index: 9999;
+}
+
+ul.streamingPageContentFiles li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+.add_more_link {
+    margin-top: 10px;
+}
+
+.craue_config_settings_modify label:after {
+    content: ': ';
+}
+
+.craue_config_settings_modify legend {
+    width: auto;
+    border-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.craue_config_settings_modify fieldset {
+    padding: .35em .625em .75em;
+    margin: 0 2px 20px 0;
+    border: 1px solid #c0c0c0;
+}
+
+.craue_config_settings_modify .cls-fieldset {
+    color: #4da5ff;
+    font-size: small;
+    cursor: pointer;
+}
+
+ul.multiselect-container li input[type="checkbox"] {
+    position: relative;
+    vertical-align: middle;
+    box-shadow: none !important;
+}
+.multiselect-container>li>a {
+    height: 35px;
+}
+.multiselect-container>li>a>label.checkbox, .multiselect-container>li>a>label.radio {
+    top: -5px;
+}
+input[type="checkbox"] {
+    box-shadow:none!important;
+}
+fieldset.form-group legend{
+    display: none;
+}
+.ui-sortable-handle{
+    cursor: pointer;
+}
+
+
+.clsBorderNone{ border: 0; }
+.clsBackgroundNone{ background: none; }
+.clsTrueIconColor { color:  #399bff !important; }
+.clsFalseIconColor { color:  #ef4836 !important; }
+.m-t-24 { margin-top: 24px; }
+.m-t-15 { margin-top: 15px; }
+.select2-selection.select2-selection--single {height: 34px !important;}
+.form-group { margin-bottom: 5px; }
+label { margin-bottom: 0px; }
+.order-table>tbody>tr>td,.order-table > tbody > tr > th{line-height: 0!important;}
+.p-10{padding: 10px}
+.glyphicon{top: 2px!important;}
+.que-alert img {
+    width: 50px!important;
+    height: 50px!important;
+    left: 6px!important;
+    top: 10px!important;
+    border: 1px solid #0000002e;
+}
+.que-alert {
+    background: #f5f5f5;
+    color: #101010;
+    min-height: 150px;
+}
+.que-alert h4 {
+    font-size: 22px!important;
+    margin-bottom: 10px!important;
+    border-bottom: 1px solid;
+}

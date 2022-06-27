@@ -18,7 +18,7 @@
 						 {{ formActionLabel|default('app_customer')|trans ~ ' ' ~ title |trans }}
 					</div>
                     <div class="card-body">
-                  <div id="presidents">Loading...</div>
+                     <div class="panel-body table-responsive">   {{ sg_datatables_render(datatable) }}</div>
 
 						
 				</div>

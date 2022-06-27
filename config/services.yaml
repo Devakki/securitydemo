@@ -9,7 +9,7 @@ services:
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
- 
+        
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
     App\:
@@ -18,6 +18,7 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
+            - '../src/Tests/'
             
     # Datatables
     Sg\DatatablesBundle\Datatable\DatatableFactory:
@@ -27,7 +28,13 @@ services:
     Sg\DatatablesBundle\Controller\DatatableController:
         calls: [['setContainer', ['@Psr\Container\ContainerInterface']]]
 
-  
+    ##  EventListener       ----------------------------------------------------------------------------------------------
+    # Set Create & Update Entity fields
+    App\EventListener\ProjectListener:
+        arguments: [ "@security.token_storage" ]
+        tags:
+        - { name: doctrine.event_listener, event: prePersist }
+        - { name: doctrine.event_listener, event: preUpdate }
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
